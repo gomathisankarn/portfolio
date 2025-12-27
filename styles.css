@@ -1,0 +1,229 @@
+/* Basic Clean Variables (Simulated) */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --primary-color: #007bff;
+    /* Standard Link Blue */
+    --secondary-bg: #f4f4f4;
+    --border-color: #dddddd;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Very standard font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/* Header - Simple generic bar */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Sections General */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+h1,
+h2,
+h3 {
+    color: #222;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #e9ecef;
+    /* Bootstrap-like gray header */
+}
+
+.hero-name {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-tagline {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-links {
+    margin-top: 20px;
+}
+
+.about-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.about-links a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    /* Slight rounded corners */
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+/* About Section */
+.about-text {
+    text-align: center;
+}
+
+/* Skills Section */
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-tags span {
+    display: inline-block;
+    background: #e1ecf4;
+    color: #39739d;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+/* Education (Simple list style) */
+.timeline-item {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Projects */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 300px;
+    background: #fff;
+}
+
+.project-tag {
+    display: block;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.project-tech span {
+    background: #eee;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+/* Contact & Footer */
+.contact-container {
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+/* Mobile Basic */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
